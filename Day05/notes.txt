@@ -1,0 +1,178 @@
+# OOP ==> programming paradigm consists of object
+
+
+
+# object ---> contain data (fields have some values) and code (funcationality
+can be applied on the caller object
+
+# OOP ---> organization for the code
+
+#OOP --> object you need rather logic
+
+
+# OOP -> collabrivate development , ---> as objects can be divide into groups
+# --> resuability of the scalability , efficiency
+
+
+Main structure
+Class --> blueprint
+
+object << instance from the classes --> created with different data
+
+
+Methods
+    constructor
+    destructor
+    normal functions
+    magic functions
+    setter and getters
+
+
+Attributes:
+    represent the state of object
+
+
+OOP or not, OOP principles:
+Encapsulation: --->
+    all important information is contained inside an object --->
+    only selected information can be access by user  (access modifiers for the data)
+    avoid data corruption
+
+Inheritance:
+    --> reusable classes ---> inheritance between class levels (relationship )
+    parent , child classes
+    parent , sub classed
+    --> pass logic  between class hierarchy , reduce development time, ensure high
+    accuracy , centralization
+
+Abstraction:  --->
+    reveal internal mechanisms , hiding unnecessary , add more changes to the object
+    --> Model --> can be followed ,
+
+Polymorphism:
+        objects --> instances from the same classes share the same behviuour
+
+        Class X --> function speak
+        Class extends X ---> function speak -> customize beh,
+        Overriding , overloading
+
+        Class A , Class B
+
+        Class A extends from B
+
+        Class A:
+
+            method X:  # function signature
+                 bodyA
+
+        Class B extends A:
+            Method X:  # function sign
+                body B
+
+        # overriding
+
+
+        #overloading
+
+        Class Z:
+            function abc(x:int):
+                pass
+
+            function abcd (x:int, y:str):
+                pass
+
+
+-------------
+Adam --->
+Plant -->
+
+!!!
+class and constructors
+
+class Employee{
+
+    defined as public properites
+    string name;
+    int age ;
+
+}
+
+create object ---> constructor by default, you can use the object to access the
+parameters created
+
+
+
+
+
+# restrict access to the class memebers ---> functions , attributes or variables
+
+Access modifiers ---> apply encapsulation concepts --> restrict access of the data
+
+public : the member can be accessed, and modified from anywhere within the script ,
+
+private : the member can be accessed or modified only inside
+the class.. customoize values
+# controling the input ,
+# setter and getters
+
+
+outside the class you cannot access it or even see it.
+
+protected: the member can be accessed within class and subclasses (inherits me )
+
+static: the member doesn't depend on the caller instance , it depends on the class only
+use class name to access it.
+
+
+
+
+class Employee {
+    private name;   # as helper value
+    private sal = 1000
+    protected age;
+    # create instancee
+    function constructor(myname, salary ){
+        this.name = myname
+        this.netsalary = salary + this.sal
+    }
+
+    function changesal (){
+        this.sal = 6000
+    }
+}
+
+e = new Employee("Ahmed")
+print (e.name) # object has no attribute with re name
+e.name = ""
+print (e.age) #object has no attribute with ref age ---> "age is proctected memeber
+and cannot accessed outside class "
+
+
+#############################################
+
+constructor --> create object in memory
+
+# multiple constructors ---> many forms to create the object
+
+Class A {
+    salary , age
+    # polymorphism
+    function A (x:int, y:int){
+        salary =x
+        age = y
+    }
+    function A(y:str, m:int){
+
+    }
+    function A (x,y,z){
+    }
+
+    function A (){
+    }
+    function A (x){
+        salary = x
+    }
+}
+
+a = new A(4,5)
+b = new A(5)
