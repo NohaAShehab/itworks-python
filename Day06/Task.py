@@ -13,15 +13,19 @@ class Students:
         cls.studentlist.append(obj)
 
 
-s = Students("Ahmed", 10)
-s = Students("Rana", 4)
-print(Students.count)
-print(Students.studentlist)
+class ITI:
 
-for item in Students.studentlist:
-    # print(f"id={item.key} and value: {item.v}")
-    # print(f"item {item.name}, id= {item.id}")
-    if item.id == 10:
-        print(f"{item.name}")
+    # def __init__(self, *students):  # variable len of students 0 or more
+    #     self.students = list(students)
+    def __init__(self):
+        # self.student = studentlist
+        self.student = Students  # get all intances form this class as list
+
+
+s = Students("Ahmed", 10)
+s2 = Students("Rana", 4)
+
+iti= ITI()
+eng = ITI()
 
 
