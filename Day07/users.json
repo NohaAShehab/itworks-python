@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "firstname": "ali",
+      "lastname": "ahmed"
+    },
+    {
+      "firstname": "ali",
+      "lastname": "ahmed"
+    },
+    {
+      "firstname": "moh",
+      "lastname": "moh"
+    },
+    {
+      "firstname": "moh",
+      "lastname": "moh"
+    }
+  ]
+}
